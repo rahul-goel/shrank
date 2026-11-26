@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    CodeMirror.fromTextArea(document.getElementById("bibtex"), {
-        lineNumbers: false,
-        lineWrapping: true,
-        readOnly: true
-    });
+    var bibtex = document.getElementById("bibtex");
+    if (bibtex) {
+        CodeMirror.fromTextArea(bibtex, {
+            lineNumbers: false,
+            lineWrapping: true,
+            readOnly: true
+        });
+    }
 });

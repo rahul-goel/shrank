@@ -44,3 +44,68 @@ a[href=""] {
     margin-top: 2em;
     margin-bottom: 3em;
 }
+
+/* ---------- Teaser ---------- */
+#teaser {
+    margin-top: 2em;
+}
+
+.teaser-inner {
+    float: none;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+/* 721/1920, 171/1080, 416/1920, 416/1080 */
+.hero-crop {
+    position: absolute;
+    left: 37.552%;
+    top: 15.833%;
+    width: 21.667%;
+    height: 38.519%;
+    border: 2px solid #f09228;
+}
+
+.teaser-crops {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.teaser-crops figure {
+    flex: 1 1 0;
+    margin: 0;
+    min-width: 0;
+    text-align: center;
+}
+
+.teaser-crops img {
+    display: block;
+    width: 100%;
+    border: 1px solid #f09228;
+}
+
+.teaser-crops figcaption,
+.crop-stat {
+    font-size: .85em;
+    line-height: 1.6;
+}
+
+.crop-stat {
+    color: #666;
+}
+
+.teaser-caption {
+    margin-top: .6em;
+    text-align: center;
+    color: #555;
+}

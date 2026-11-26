@@ -95,13 +95,45 @@
             </div>
         </div>
 
+        <div class="row" id="teaser">
+            <div class="col-md-8 col-md-offset-2 teaser-inner">
+                <div class="hero">
+                    <img src="img/teaser/hero.jpg" alt="SHrank reconstruction of MatrixCity (aerial view)">
+                    <!-- crop box: x=721, y=171, size=416 on the 1920x1080 render -->
+                    <div class="hero-crop"></div>
+                </div>
+
+                <div class="teaser-crops">
+                    <figure>
+                        <figcaption>Ground truth</figcaption>
+                        <img src="img/teaser/gt_crop.jpg" alt="Ground truth">
+                        <div class="crop-stat">&nbsp;</div>
+                    </figure>
+                    <figure>
+                        <figcaption>Adam</figcaption>
+                        <img src="img/teaser/adam_crop.jpg" alt="Adam">
+                        <div class="crop-stat">10.0M Gaussians</div>
+                    </figure>
+                    <figure>
+                        <figcaption>SHrank (ours)</figcaption>
+                        <img src="img/teaser/ours_crop.jpg" alt="SHrank">
+                        <div class="crop-stat"><b>25.3M</b> Gaussians</div>
+                    </figure>
+                </div>
+
+                <p class="teaser-caption">
+                    With the same 12&nbsp;GB GPU, SHrank fits 2.5&times; more Gaussians.
+                </p>
+            </div>
+        </div>
+
+        <!-- TODO: uncomment once the arXiv ID / venue is known, and fill in the final BibTeX entry
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Citation
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
-                    <!-- TODO: final BibTeX entry -->
                     <textarea id="bibtex" class="form-control" readonly>
 @article{goel2026shrank,
     author = {Goel, Rahul and Mahmoud, Ahmed H. and Ragan-Kelley, Jonathan and Durand, Fr{\'e}do},
@@ -112,6 +144,7 @@
                 </div>
             </div>
         </div>
+        -->
 
         <div class="row" id="credit">
             <div class="col-md-8 col-md-offset-2">
