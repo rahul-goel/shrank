@@ -1,0 +1,46 @@
+a {
+    color: #1772d0;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #f09228;
+    text-decoration: none;
+}
+
+#title {
+    margin-top: 1.5em;
+}
+
+.author-table {
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author-table td {
+    vertical-align: top;
+    padding: 3px 1.5em;
+}
+
+/* A link with no target yet (href="") reads as plain text. */
+a[href=""] {
+    color: inherit;
+    pointer-events: none;
+}
+
+.CodeMirror {
+    font-size: .8em;
+    height: auto;
+}
+
+.CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+#credit {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}

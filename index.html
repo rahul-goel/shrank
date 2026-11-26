@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SHrank</title>
+    <meta name="description" content="SHrank: A Memory-Efficient Optimizer for Spherical Harmonics in 3D Gaussian Splatting.">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="header">
+        <div class="row">
+            <!-- TODO: venue -->
+            <h2 class="col-md-12 text-center" id="title">
+                SHrank: A Memory-Efficient Optimizer for<br>
+                Spherical Harmonics in 3D Gaussian Splatting<br>
+                <small>
+                    &nbsp;
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <table class="author-table">
+                    <tr>
+                        <td>
+                            <a href="https://rahulgoel.xyz">Rahul Goel</a><br>
+                            MIT CSAIL
+                        </td>
+                        <td>
+                            <a href="https://ahdhn.github.io">Ahmed H. Mahmoud</a><br>
+                            MIT CSAIL
+                        </td>
+                        <td>
+                            <a href="https://people.csail.mit.edu/jrk/">Jonathan Ragan-Kelley</a><br>
+                            MIT CSAIL
+                        </td>
+                        <td>
+                            <a href="https://people.csail.mit.edu/fredo/">Fr&eacute;do Durand</a><br>
+                            MIT CSAIL
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="main">
+        <br>
+        <div class="row">
+            <!-- TODO: fill in the hrefs once the paper, supplementary and code are public -->
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <a href="">Paper</a>
+                /
+                <a href="">Supplementary</a>
+                /
+                <a href="">arXiv</a>
+                /
+                <a href="">Code</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    We propose a memory-efficient optimizer for training 3D Gaussian Splatting
+                    that preserves the underlying scene representation and reconstruction quality.
+                    We target the memory overhead of Adam when optimizing Spherical Harmonics,
+                    which account for a substantial fraction of training memory. By dropping the
+                    first moment, pooling the second moment across a Gaussian, and exploiting the
+                    low-rank structure of gradients, we achieve a 3.3&times; reduction in static
+                    memory, and a 1.7&times; reduction in peak memory on standard benchmarks that
+                    grows to 2.5&times; at scale. Our approach also lowers the memory bandwidth
+                    for the optimizer, resulting in 2.5&times; faster training at scale, all
+                    while matching the quality of Adam. This allows fitting up to 2.5&times; more
+                    primitives on the same GPU, unlocking large scale scene training with fewer
+                    resources. Our optimizer is a drop-in replacement and cleanly integrates into
+                    various training systems. In CPU-offloaded training, it can reduce the PCIe
+                    traffic by 3.7&times; and the CPU RAM requirement by 2.6&times;. In
+                    multi-GPU training, it reduces the memory per GPU by up to 1.7&times;.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <!-- TODO: final BibTeX entry -->
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{goel2026shrank,
+    author = {Goel, Rahul and Mahmoud, Ahmed H. and Ragan-Kelley, Jonathan and Durand, Fr{\'e}do},
+    title = {{SHrank}: A Memory-Efficient Optimizer for Spherical Harmonics in 3D Gaussian Splatting},
+    journal = {},
+    year = {2026}
+}</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="credit">
+            <div class="col-md-8 col-md-offset-2">
+                The website template was borrowed from <a href="http://mgharbi.com/">Micha&euml;l Gharbi</a>.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
